@@ -1,0 +1,244 @@
+
+.stake_header {
+    width: 100%;
+    height: 224px;
+    background-image: linear-gradient(to right , #3C38E3, #FD169C);
+}
+
+.stake_header h1 {
+    padding: 50px 0 0 50px;
+    color: #fff;
+}
+.stake_header p {
+    padding: 10px 0 0 50px;
+    color: #fff;
+}
+
+
+.st_numbers {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.st_num_item p {
+    color: #8C8C8C;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.st_num_item h3 {
+    font-size: 27px;
+    font-weight: 500;
+    color: #000;
+}
+.st_amo_display {
+    display: flex;
+    margin: 20px;
+    /* align-items: center; */
+}
+.st_amount {
+    width: 40%;
+}
+.st_amount .st_amo_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 0;
+}
+.st_amount .st_amo_input label{
+    display: block;
+    font-size: 13px;
+    color: #000;
+    font-weight: 500;
+}
+.st_amount .st_amo_input input{
+    display: block;
+    outline: none;
+    border: 1px solid #CDCDCD;
+    padding: 10px;
+    width: 100%;
+}
+.st_amo_point {
+    padding: 15px 0;
+}
+.st_amount .st_amo_point .st_am0_point_1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.st_amount .st_amo_point .st_am0_point_1 p{
+    color: #A0A0A0;
+    font-size: 13px;
+}
+.st_amount .st_amo_point .st_am0_point_1 h5{
+    color: #0000;
+    font-size: 13px;
+}
+.st_amount button {
+    width: 100%;
+    padding: 10px;
+    background-color: #FD169C;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+.st_display {
+    padding: 20px 40px;
+    width: 60%;
+    
+}
+.st_display .st_display_header {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.st_step {
+    margin: 20px 10px;
+}
+.st_step h3 {
+    text-align: center;
+    padding: 15px 0;
+    color: #181D34;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+.st_step ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.st_plan {
+    margin: 20px;
+}
+.st_plan h3 {
+    text-align: center;
+    margin: 60px 20px;
+}
+.st_plan_holder {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(378px, 1fr));
+    grid-gap: 1rem;
+    padding: 0 30px;
+}
+
+.holder_st {
+    position: relative;
+    
+}
+.apexcharts-toolbar {
+    /* display: none   ; */
+}
+.pop_up {
+    width: 100%;
+    height: 100vh;
+    background-color: #262d4eaa;
+    position: absolute;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.pop_up_disactive {
+    display: none;
+}
+.st_pop-up {
+    width: 50%;
+    height: 90vh;
+    background-color: #fff;
+    padding: 10px 50px;
+    border-radius: 5px;
+}
+.st_pop-up-active {
+    display: none;
+}
+.st_pop_up_compl {
+    width: 50%;
+    height: 50vh;
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.st_pop_up_compl_disactive {
+    display: none;
+}
+.stake_close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 30px;
+}
+.st_pop_up_compl button {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 14px;
+    background-color: #FD169C;
+    color: #fff;
+
+}
+.st_pop_holder {
+    height: inherit;
+}
+.st_pop_holder h4 {
+    color: #3C38E3;
+    font-size: 35px;
+}
+.st_pop_holder p {
+    color: #000;
+    font-size: 16px;
+}
+.st_holder_box h6 {
+    font-size: 16px;
+}
+.st_holder_box p {
+    text-align: end;
+}
+.st_holder_box label {
+    padding: 13px 0;
+}
+.st_holder_box input {
+    display: block;
+    width: 100%;
+    padding: 15px 10px;
+    margin: 10px 0px;
+    background-color: #F2F7FE;
+    border: none;
+    outline: none;
+}
+.st_holder_box button {
+    width: 100%;
+    padding: 15px 10px;
+    border: none;
+    outline: none;
+    background-color: #FD169C;
+    color: #fff;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+@media only screen and (max-width: 700px) {
+    .st_pop-up {
+    width: 90%;
+    background-color: #fff;
+    padding: 15px 40px;
+    border-radius: 5px;
+}
+.st_amo_display {
+    display: block;
+    margin: 20px;
+    /* align-items: center; */
+}
+.st_amount {
+    width: 80%;
+}
+}

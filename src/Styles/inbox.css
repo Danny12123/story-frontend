@@ -1,0 +1,378 @@
+#inbox_mes {
+    position: fixed;
+    width: 100%;
+}
+
+.box_convs {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.search_box {
+    position: absolute;
+    top: 126px;
+    left: 0px;
+    width: 20%;
+    height: 20vh;
+    overflow-y: scroll;
+    background-color: #fff;
+    color:#000;
+}
+.is_conv-box {
+    display: none;
+}
+.new_conv_box .new_m_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    /* background-color: #FD169C; */
+    margin: 10px 0;
+    display: block;
+}
+.disactive_box {
+    display: none;
+}
+.new_m_box h6 {
+    margin: 15px 20px;
+    text-align: start;
+    font-weight: 400;
+}
+.new-img-box {
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    border-radius: 50%;
+}
+.new-img-box img {
+    width: 100%;
+    object-fit: cover;
+}
+.inbox_container{
+    position: relative;
+    width: 100%;
+    height: 86vh;
+    background-color: #F9FBFC; 
+}
+.conversation {
+    width: 100%;
+    height: 100vh;
+}
+.seenMessage {
+    width: 100%;
+    height: 90vh;
+    background-color: #fff;
+}
+.seenMessage h2 {
+    margin: 20px 25px;
+}
+.seenMessage  span {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+}
+.sendMesssage {
+    width: 80%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    overflow-y: scroll;
+}
+
+.message_cont {
+    width: 100%;
+    height: 80vh;
+    padding: 20px 0;
+    display: flex;
+    /* background-color: aquamarine; */
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.sm_user_holder {
+    width: 22px;
+    height: 22px;
+    border-radius: 50px;
+    display: none;
+}
+.sm_user_holder img {
+    width: 100%;
+    border-radius: 50%;
+}
+.user_holder {
+    width: 29px;
+    height: 29px;
+    border-radius: 50px;
+    /* background-color: #000; */
+}
+.user_holder img {
+    width: 100%;
+    border-radius: 50px;
+    object-fit: cover;
+}
+#inbox_text {
+    width: 100%;
+    margin: 0;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+}
+.inbox_inputs {
+    width: 80%;
+    display: flex;
+    background-color: #F9FBFC;
+    padding: 10px;
+}
+.sendMessage {
+    width: 50px;
+    height: 50px;
+    background-color: #FD169C;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+.mes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.mes_text {
+    max-width: 55%;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    background-color: #FD169C;
+}
+.mes_text_ryt {
+    background-color: #f5f5f5;
+    color: #000;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    align-items: flex-end;
+}
+/* .mes_text .messageTop{
+    color: #000000d9;
+} */
+
+
+.mes_text p{
+    font-size: 16px;
+    
+    margin: 0;
+    
+}
+#span_tym {
+    text-align: end;
+    font-size: 12px;
+    font-weight: 500;
+    color: #1a1a1ad4;
+    text-align: start;
+}
+.big_sc_message {
+    display: block;
+}
+/* .sm_sc_message {
+    display: none;
+} */
+.user_lg_box {
+    display: block;
+    
+    overflow-y: scroll;
+}
+.user_sn_box {
+    display: none;
+}
+#use_message {
+    display: block;
+}
+.big_coneversation {
+    display: block;
+}
+.small_coneversation {
+    display: none;
+}
+.sm_us_text {
+    display: none;
+}
+#sm_use_message {
+    display: black;
+}
+
+@media only screen and (max-width: 600px) {
+   .box_convs {
+    display: block;
+    width: 100%;
+    height: 100vh;
+}
+#use_message {
+    display: none;
+}
+.user_box {
+    display: block;
+    width: 100%;
+    height: 26vh;
+    background-color: #f5f5f5;
+    padding-bottom: 10px;
+}
+.us_text {
+    display: none;
+}
+.user_lg_box {
+    display: none;
+}
+.user_sn_box {
+    display: block;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+.u_sn_box_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.u_sn_box_header h3{
+    margin: 0;
+}
+.search_holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sn_me_search {
+    border: none;
+    outline: none;
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+#sm_use_message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+#use_container {
+    display: flex;
+    justify-content: center;
+    margin: 7px auto;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+.sm_use_me_holder {
+    text-align: center;
+}
+.sm_user_holder {
+     width: 29px;
+    height: 29px;
+    border-radius: 50px;
+}
+.sm_user_holder img {
+    width: 100%;
+    border-radius: 50%;
+}
+.big_coneversation {
+    display: none;
+}
+.small_coneversation {
+    display: block;
+    width: 100%;
+    height: 55vh;
+}
+.sm_us_text {
+    display: block;
+    margin: 0;
+    padding: 5px 0 ;
+}
+.sm_seenMessage {
+    width: 100%;
+    height: 60vh;
+    /* background-color: #FD169C; */
+    overflow-y: scroll;
+}
+
+.message_cont {
+    width: 100%;
+    height: 82vh;
+    padding: 20px 0;
+}
+.sp {
+    text-align: center;
+    margin: 40px auto;
+    text-align: center;
+    font-size: 15px;
+}
+.smin_sendMesssage {
+    width: 100%;
+    height: 10vh;
+    background-color: #F9FBFC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sm_inbox_inputs {
+    display: flex;
+    width: 100%;
+}
+#sm_inbox_text {
+    width: 100%;
+    margin: 0;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+}
+/* .inbox_inputs {
+    width: 100%;
+    display: flex;
+    background-color: #F9FBFC;
+    padding: 10px;
+} */
+.sm_sendMessage {
+    width: 50px;
+    height: 50px;
+    background-color: #FD169C;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+.search_box {
+    position: absolute;
+    top: 116px;
+    left: 0px;
+    width: 100%;
+    height: 60vh;
+    overflow-y: scroll;
+    background-color: #fff;
+    color:#000;
+}
+.is_conv-box {
+    display: none;
+}
+.new_conv_box .new_m_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    /* background-color: #FD169C; */
+    margin: 10px 0;
+}
+.new_m_box h6 {
+    margin: 15px 20px;
+    text-align: start;
+    font-weight: 400;
+}
+}

@@ -1,0 +1,219 @@
+:root {
+    --gradient: linear-gradient(as right, #FD447D, blue)
+}
+.holder_wallet {
+    position: relative;
+}
+#wallet_header {
+    padding: 20px ;
+    width: 99%;
+    position: relative;
+}
+#wallet_header .bg_wallet_header {
+    width: 100%;
+    height: 144px;
+    background-color: greenyellow;
+    border-radius: 5px;
+}
+#wallet_header .bg_wallet_header  img {
+    width: 100%;
+    height: inherit;
+    border-radius: 5px;
+}
+#wallet_header .wallet_profile_img {
+    width: 124px;
+    height: 117px;
+    background-color: black;
+    border-radius: 100%;
+    position: absolute;
+    top: 110px;
+    left: 90px;
+    border: 4px solid #FD447D;
+    /* background: var(--gradient); */
+    font: inherit;
+}
+.wallet_camera {
+    width: 38px;
+    height: 38px;
+    border-radius: 100%;
+    border: 3px #FD3D81 solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 800;
+    position: absolute;
+    left: 182px;
+    top: 185px;
+    background-color: #fff;
+}
+
+#wallet_info {
+    margin: 60px 90px;
+}
+
+#wallet_info .wa_info_name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#wallet_info .wa_info_name  h5 {
+    font-size: 22px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#wallet_info .wa_info_name  span {
+    color: #2EBD85;
+    background-color: #E0F5EE;
+    width: 134px;
+    padding: 10px;
+    text-align: end;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50px 0px 0px 50px;
+}
+.wa_info_dec {
+    display: flex;
+    justify-content: space-between;
+}
+.wa_info_dec .wa_info_btn {
+    margin-top: 70px;
+}
+.wa_info_dec .wa_info_btn button {
+    width: 113px;
+    /* height: 33px; */
+    outline: none;
+    border: none;
+    padding: 10px;
+    margin: 0 10px;
+}
+.wa_info_btn .wa_btn_1 {
+    border: 3px solid #000;
+    color: #4C494B;
+    background-color: #fff;
+}
+.wa_info_btn .wa_btn_2 {
+    background-color: #FD169C;
+    color: #fff;
+}
+/*wa_sec1*/
+#wa_sec1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px 90px;
+}
+#wa_sec1 .wa_sec1_logo {
+    display: flex;
+    align-items: center;
+}
+#wa_sec1 .wa_sec1_logo img{ 
+    width: 10%;
+}
+#wa_sec1 .wa_sec1_logo div{ 
+    margin-left: 30px;
+}
+#wa_sec1 .wa_sec1_logo div h2{ 
+    line-height: 1;
+    padding-top: 40px;
+}
+#wa_sec1 .wa_sec1_graph {
+    width: 40%;
+    height: 6vh;
+    background-color: #4C494B;
+    margin-left: 30px;
+}
+#wa_sec1 .wa_sec1_amount {
+    text-align: end;
+}
+#wa_sec1 .wa_sec1_amount h1 {
+    font-size: 26px;
+    font-weight: 700;
+}
+#wa_sec1 .wa_sec1_amount span {
+    background-color: #2EBD85;
+    padding: 2px 10px;
+    color: #fff;
+    border-radius: 5px;
+}
+/*wa_sec2*/
+#wa_sec2 {
+    display: flex;
+    align-items: center;
+    margin: 60px 90px;
+}
+#wa_sec2 .wa_sec2_box1 {
+    border: 1px #FD169C solid;
+    padding: 15px 80px; 
+    border-radius: 5px;
+}
+#wa_sec2 .wa_sec2_box1 p {
+    padding: 10px 0;
+    
+}
+#wa_sec2 .wa_sec2_box1 span {
+    padding-bottom: 10px;
+}
+#wa_sec2 .wa_sec2_box2 {
+    display: flex;
+}
+#wa_sec2 .wa_sec2_box2 {
+    display: flex;
+    margin-left: 80px;
+}
+#wa_sec2 .wa_sec2_box2 .wa_sec2_send {
+    margin: 0 15px;
+}
+
+.wa_ic {
+    display: block;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+/*addstory*/
+.addstory_holder {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    background-color: #262d4e90;
+}
+.addstory {
+    width: 635px;
+    height: 395px;
+    background-color: #E0F5EE;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.upload {
+    text-align: center;
+    margin: 0 auto;
+}
+.upload .upload_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+.upload .upload_header .upload_fa {
+    font-size: 20px;
+}
+.upload_box {
+    width: 476px;
+    height: 140px;
+    border: dashed 1px #000;
+    text-align: center;
+    margin: 0 auto;
+}
+.upload_box .upload_icon {
+    font-size: 75px;
+    padding: 15px 0 30px 0;
+    color: #FD169C;
+}
+.upload_box p {
+    color: #A9A9A9;
+}

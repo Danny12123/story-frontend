@@ -1,0 +1,55 @@
+.ads {
+    width: 90%;
+    height: 20vh;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 5px;
+    /* padding-top: 100px; */
+}
+.car_img {
+    width: 100%;
+    height: 20vh;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.news {
+    padding-left: 20px;
+}
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-v {
+  /* background: #eee; */
+}
+@media only screen and (max-width: 600px)  {
+  .ads {
+    width: 90%;
+    height: 20vh;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 5px;
+    margin-top: 120px;
+}
+}

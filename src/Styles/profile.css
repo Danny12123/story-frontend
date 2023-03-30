@@ -1,0 +1,539 @@
+:root {
+    --gradient: linear-gradient(as right, #FD447D, blue)
+}
+.holder_profile {
+    /* position: relative; */
+}
+#profile_header {
+    padding: 20px 50px ;
+    width: 100%;
+    position: relative;
+}
+#profile_header .bg_wallet_header {
+    width: 100%;
+    height: 144px;
+    border-radius: 5px;
+}
+#profile_header .bg_wallet_header  img {
+    width: 100%;
+    height: inherit;
+    border-radius: 5px;
+    object-fit: cover;
+}
+#profile_header .wallet_profile_img {
+    width: 124px;
+    height: 124px;
+    /* background-color: black; */
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 110px;
+    left: 90px;
+    border: 4px solid #FD447D;
+    /* background: var(--gradient); */
+    
+}
+#profile_header .wallet_profile_img img {
+    width: 100%;
+    height: inherit;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.wallet_camera {
+    width: 38px;
+    height: 38px;
+    border-radius: 100%;
+    border: 3px #FD3D81 solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 800;
+    position: absolute;
+    left: 182px;
+    top: 185px;
+    background-color: transparent;
+}
+.image-upload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#input[type="file"] {
+    display: none;
+}
+#input2[type="file"] {
+    display: none;
+}
+#upload[type="file"] {
+    display: none;
+}
+#edit {
+    display: flex;
+    justify-content: end;
+}
+.edit_profile {
+    text-align: end;
+    color: #2556FA;
+}
+
+#profile_info {
+    margin: 60px 90px;
+}
+
+#profile_info .wa_info_name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#profile_info .wa_info_name  h5 {
+    font-size: 22px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#profile_info .wa_info_name  span {
+    color: #2EBD85;
+    background-color: #E0F5EE;
+    width: 134px;
+    padding: 10px;
+    text-align: end;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50px 0px 0px 50px;
+}
+.wa_info_dec {
+    display: flex;
+    justify-content: space-between;
+}
+.wa_info_dec .wa_info_btn {
+    margin-top: 70px;
+}
+.wa_info_dec .wa_info_btn button {
+    width: 113px;
+    /* height: 33px; */
+    outline: none;
+    border: none;
+    padding: 10px;
+    margin: 0 10px;
+}
+.wa_info_btn .wa_btn_1 {
+    color: #4C494B;
+    background-color: #FD169C;
+}
+.wa_info_btn .wa_btn_2 {
+    background-color: #fff;
+    color: #000;
+    /* border-bottom: #000 1px solid; */
+}
+
+#profile_route {
+    padding: 20px ;
+}
+#profile_route .profile_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    border-bottom: 1px #000 solid;
+}
+#profile_route .profile_nav .profile_nav_h {
+    margin: 0 15px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.profile_active {
+    border-bottom: 3px #2556FA solid;
+}
+/*addstory*/
+.addstory_holder {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    background-color: #262d4e90;
+    position: fixed;
+}
+.addstory_holder-active {
+    display: none;
+}
+.addstory {
+    /* width: 70%; */
+    height: 70vh;
+    background-color: #E0F5EE;
+    border-radius: 5px;
+    position: absolute;
+    /* margin: 0 10px; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#addstory2 {
+    width: 70%;
+    height: 70vh;
+    background-color: #E0F5EE;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.addstory-active {
+    display: none;
+}
+.upload {
+    /* width: 100%; */
+    padding: 10px 0;
+    text-align: center;
+    margin: 0 auto;
+}
+.upload .upload_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+.upload .upload_header .upload_fa {
+    font-size: 20px;
+}
+.upload_box {
+    width: 80%;
+    height: 50vh;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.up_img_vid {
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+     minmax(320px, 1fr));
+    grid-gap: 1rem;
+    /* gap:35px; */
+}
+.up_img_vid video {
+    width: 100%;
+    height: inherit;
+}
+.up_img_vid video source {
+    width: 100%;
+    height: inherit;
+}
+/* .holder_main_box {
+    transform: translateX(-100%);
+    z-index: 5;
+} */
+/* .holder_main_box {
+    width: 100%;
+    height: inherit;
+} */
+.holder_main_box_moverty {
+     width: 100%;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    right: 507px;
+}
+.sec_box_holder {
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 507px;
+    /* opacity: 0; */
+    background-color: #000;
+}
+.sec_box_holder_movelft {
+    width: 100%;
+    height: inherit;
+    /* background-color: #000; */
+    position: absolute;
+    top: 0;
+    left: 0px;
+    display: flex;
+    /* transition: all 1s ease-in; */
+    /* transform: translateX(-100%); */
+}
+.reader_item {
+    width: 100%;
+    height: inherit;
+    background-color: #2556FA;
+}
+.input_comment {
+    width: 100%;
+    height: inherit;
+    background-color: rebeccapurple;
+}
+.up_input {
+    width: 100%;
+    height: 50vh;
+    border: dashed 1px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .up_in_hol {
+
+} */
+
+.uploadimage_hol {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+}
+.upload_box .upload_icon {
+    font-size: 75px;
+    /* padding: 15px 0 30px 0; */
+    color: #FD169C;
+}
+.upload_box p {
+    color: #A9A9A9;
+}
+.next_holder {
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-between;
+}
+
+/*slieds*/
+.my_stories {
+    animation-name: slider;
+    animation-duration: 1s
+}
+/*profile router*/
+#profile_rout {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #F2F3F5;
+}
+.pro_rut_container {
+    display: flex;
+}
+.pro_rut_container h5 {
+    padding: 13px  15px;
+    cursor: pointer;
+}
+.tabsActive {
+    border-bottom: 1px solid blue;
+}
+.pro_ro_active {
+    display: block;
+}
+.pro_ro_disactive {
+    display: none;
+}
+/*---------------------------EDIT PROFILE------*/
+.active_profile {
+    width: 100%;
+    height: 100px;
+    background-color: #000000c3;
+    display: block;
+    position: relative;
+}
+.disactive_profile {
+    display: none;
+}
+.edit_profile {
+    position:  absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 70vh;
+    background-color: #cccc;
+    padding: 15px;
+}
+.coverpic {
+    width: 100%;
+    height: 20vh;
+    background-color: #2556FA;
+    position: relative;
+}
+.coverpic img {
+    width:100%;
+    object-fit: cover;
+}
+
+/*---------------------------//EDIT PROFILE------*/
+
+
+
+@media only screen and (max-width: 425px) {
+    #profile_header {
+    padding: 10px ;
+    width: 100%;
+    position: relative;
+}
+.pro_rut_container {
+    display: flex;
+}
+.pro_rut_container h5 {
+    padding: 13px  15px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.wa_info_dec .wa_info_btn {
+    margin-top: 10px;
+}
+.wa_info_dec .wa_info_btn button {
+    width: 100px;
+    /* height: 33px; */
+    outline: none;
+    border: none;
+    padding: 5px;
+    margin: 0 10px;
+}
+.wa_info_btn .wa_btn_1 {
+    color: #4C494B;
+    background-color: #FD169C;
+}
+.wa_info_btn .wa_btn_2 {
+    background-color: #fff;
+    color: #000;
+    border-bottom: #000 1px solid;
+}
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    #profile_header .bg_wallet_header {
+    width: 100%;
+    height: 120px;
+    /* background-color: greenyellow; */
+    border-radius: 5px;
+}
+    #profile_header .wallet_profile_img {
+    width: 80px;
+    height: 80px;
+    /* background-color: black; */
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 93px;
+    left: 40px;
+    border: 4px solid #FD447D;
+    /* background: var(--gradient); */
+    
+}
+.wallet_camera {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 3px #FD3D81 solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 800;
+    position: absolute;
+    left: 90px;
+    top: 150px;
+    background-color: #f5f5f5;
+}
+
+#profile_info {
+    margin: 15px 15px;
+}
+.wa_info_dec {
+    display: block;
+}
+.wa_info_dec .wa_info_btn {
+    margin-top: 10px;
+}
+.wa_info_dec .wa_info_btn button {
+    width: 113px;
+    /* height: 33px; */
+    outline: none;
+    border: none;
+    padding: 10px;
+    margin: 0 10px;
+}
+.wa_info_btn .wa_btn_1 {
+    color: #4C494B;
+    background-color: #FD169C;
+}
+.wa_info_btn .wa_btn_2 {
+    background-color: #fff;
+    color: #000;
+    border-bottom: #000 1px solid;
+}
+#profile_route {
+    padding: 20px 15px;
+}
+#profile_route .profile_nav .profile_nav_h {
+    margin: 0 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.addstory {
+    width: 100%;
+    height: 70vh;
+    background-color: #E0F5EE;
+    border-radius: 5px;
+    position: absolute;
+    /* margin: 0 10px; */
+    /* padding: 10px; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#addstory2 {
+    width: 100%;
+    height: 100vh;
+    background-color: #E0F5EE;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.upload_box {
+    width: 90%;
+    height: 50vh;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.up_img_vid {
+    width: 100%;
+    height: 50vh;
+}
+.sec_box_holder_movelft {
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    display: block;
+}
+.sec_box_holder {
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 520px;
+    display: none;
+    background-color: #000;
+}
+.reader_item {
+    width: 100%;
+    height: 40vh;
+    background-color: #2556FA;
+}
+.input_comment {
+    width: 100%;
+    height: 40vh;
+    background-color: rebeccapurple;
+}
+.holder_main_box {
+    width: 100%;
+    height: 50px;
+}
+}

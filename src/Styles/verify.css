@@ -1,0 +1,67 @@
+
+#ver_holder {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+}
+#ver_holder .verify {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+#ver_holder .verify .sign_logo {
+    display: flex;
+    justify-content: center;
+}
+#ver_holder .verify .sign_logo img{
+    width: 15%;
+}
+#ver_holder .verify .sign_logo h3 {
+    padding-top: 50px;
+    font-size: 40px;
+    font-weight: 700;   
+}
+#ver_holder .verify div .ver_cont {
+    text-align: center;
+    margin: 30px 60px; 
+}
+#ver_holder .verify div .ver_cont h6 {
+    margin: 50px 0;
+}
+#ver_holder .verify div .ver_btn {
+    margin: 50px auto;
+    text-align: center;
+}
+#ver_holder .verify div .ver_btn {
+    margin: 50px auto;
+    text-align: center;
+}
+#ver_holder .verify div .ver_btn .ver_btn_1{
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    margin: 0 10px;
+    background-color: #FD169C;
+    color: #fff;
+}
+#ver_holder .verify div .ver_btn .ver_btn_2{
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    margin: 0 10px;
+    border: #ABABAB 1px solid;
+    background-color: #fff;
+}
+.verify_option {
+    display: flex;
+    align-items: center;
+}
+.verify_option .ver_typ .rad_1{
+    margin: 25px 0;
+    display: flex;
+}
+.verify_option .ver_typ .rad_1 input {
+    margin: 0 20px;
+    
+}

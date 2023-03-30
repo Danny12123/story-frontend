@@ -1,0 +1,41 @@
+.main_holder {
+    position: relative;
+}
+
+
+.pof_hed_box {
+    width: 50%;
+    height: inherit;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+    display: block;
+}
+.pof_hed_box-active {
+    display: none;
+}
+.pro_close{
+    text-align: end;
+    font-weight: 700;
+}
+.pro_img {
+    width: 100%;
+    height: 38vh;
+}
+.pro_img img {
+    width: 100%;
+    object-fit: cover;
+}
+.pro_upload {
+    text-align: center;
+    margin: 12px auto;
+}
+.pro_upload button {
+    border: none;
+    outline: none;
+    padding: 8px 15px;
+
+}

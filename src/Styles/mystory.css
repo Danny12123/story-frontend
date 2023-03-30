@@ -1,0 +1,11 @@
+.my_story {
+    padding: 0 15px;
+
+}
+.not_show {
+    display: none;
+}
+.show_comment {
+    display: block;
+    /* transition: all 1s ease-in-out; */
+}
