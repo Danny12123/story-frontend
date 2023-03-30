@@ -50,7 +50,7 @@ const ProfileStory = ({
   // });
 
   const [files, setFiles] = useState([]);
-  console.log(files)
+
   const newUpload = (e) => {
     setFiles(e.target.files);
   };
@@ -93,6 +93,7 @@ const ProfileStory = ({
     
   }
 //  console.log(uploadStory);
+  // console.log(files.forEach(it=> console.log(it)));
 
   return (
     <div className={isActive ? "uplo_holder" : "uplo_holder-active "}>
@@ -301,7 +302,7 @@ const ProfileStory = ({
                       alt="image"
                     />
                   </div>
-                  {/* <h5>{currentUser.name}</h5> */}
+                  <h5>{user.name}</h5>
                 </div>
                 <textarea
                   placeholder="write a caption"

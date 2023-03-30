@@ -80,7 +80,7 @@ const Profile = ({ recentActive, setRecentActive }) => {
       <div className="holder_profile">
         <NavBar />
 
-        <ProfileHeader user={userBox} showProfileHandler={showProfileHandler}/>
+        <ProfileHeader user={userBox} />
 
         <ProfileInfo
           // userpost={userpost}
@@ -120,7 +120,7 @@ const Profile = ({ recentActive, setRecentActive }) => {
             }
           >
             <Postcontent username={user.username} />
-            {/* <MyStories username="Danny1" /> */}
+            {/* <MyStories username={user.username} /> */}
           </div>
           <div
             className={
@@ -148,14 +148,14 @@ const Profile = ({ recentActive, setRecentActive }) => {
         />
       </div>
 
-      // <div className={openPorfile ? "active_profile":"disactive_profile"}>
+      {/* // <div className={openPorfile ? "active_profile":"disactive_profile"}>
       //   <div className="edit_profile">
       //     <div className="coverpic">
             
       //     </div>
       //       <div className="profilepic"></div>
       //   </div>
-      // </div>
+      // </div> */}
     </>
   );
 };

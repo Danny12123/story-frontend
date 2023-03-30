@@ -305,6 +305,7 @@
 }
 .big_screen_name {
     display: block;
+    font-size: 13px;
 }
 .comment_active {
     display: block;

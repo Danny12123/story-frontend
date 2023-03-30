@@ -136,7 +136,7 @@ const Post = ({ itemPost, socket }) => {
     };
     try {
       await axios.post("/post", repost);
-      window.location.reload();
+      // window.location.reload();
       navigate("/");
     } catch (err) {
       console.log(err);
@@ -178,7 +178,7 @@ const Post = ({ itemPost, socket }) => {
               <div className="post_img_holder">
                 {(user.profilePicture && (
                   <img
-                    src={`http://localhost:7878/api/${user.profilePicture}`}
+                    src={`//localhost:7878/${user.profilePicture}`}
                     alt="image"
                   />
                 )) || <img src={profile} alt="image" />}
@@ -193,7 +193,7 @@ const Post = ({ itemPost, socket }) => {
               </div>
             </Link>
             <Link
-              to={`/donate/${itemPost._id}`}
+              to={`donate/${itemPost._id}`}
               className="link"
               style={{ textDecoration: "none", color: "#000" }}
             >
@@ -219,7 +219,7 @@ const Post = ({ itemPost, socket }) => {
 
                   <p className="post_com">
                     {showFullContent ? itemPost.desc : limitedContent}
-                    {!showFullContent && itemPost.desc.length > 40 && (
+                    {!showFullContent && itemPost.desc.length > 100 && (
                       <button
                         onClick={() => setShowFullContent(!showFullContent)}
                         style={{
@@ -229,7 +229,7 @@ const Post = ({ itemPost, socket }) => {
                           marginLeft: "5px",
                         }}
                       >
-                        Read More
+                        Read More...
                       </button>
                     )}
                   </p>

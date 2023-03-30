@@ -106,7 +106,7 @@ const Mainpage = ({ recentActive, setRecentActive }) => {
           <Route path="smchat" element={<SmChat />} />
 
           <Route
-            path="/profile/:username"
+            path="profile/:username"
             element={
               user ? (
                 <Profile
@@ -132,7 +132,7 @@ const Mainpage = ({ recentActive, setRecentActive }) => {
             }
           />
 
-          <Route path="/donate/:id" element={user ? <Donate /> : <SignUp />} />
+          <Route path="donate/:id" element={user ? <Donate /> : <SignUp />} />
           <Route path="donate">
             <Route path=":id:story" element={<StoryDes />} />
             <Route path="faq" element={<Faq />} />

@@ -156,10 +156,12 @@
 .img_input_box2 textarea {
     width: 100%;
     height: 40vh;
-    border: none;
+    border: 2px lightslategray solid;
+    outline: none;
     padding: 13px;
     color: #0000009d;
     font-weight: 600;
+    border-radius: 5px;
 }
 .img_input_box2 button {
     border: none;
@@ -279,10 +281,11 @@
 .img_input_box2 textarea {
     width: 100%;
     height: 10vh;
-    border: none;
+        border: 2px lightslategray solid;
     padding: 13px;
     color: #0000009d;
     font-weight: 600;
+    border-radius: 5px;
 }
 .img_input_box2 button {
     border: none;

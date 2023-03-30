@@ -16,17 +16,16 @@ import { format } from 'timeago.js';
 import profile from ".././Img/profile.jpg";
 import { AuthContext } from '../Context/AuthContext';
 
-const MyStories = ({ poetUser, channel }) => {
+const MyStories = ({ poetUser, channel, username }) => {
   const [showAllComment, setShowAllComment] = useState(false);
   const [myStory, setMyStory] = useState([]);
   // const [like, setLike] = useState(channel.likes.length);
   const [isLiked, setIsLiked] = useState(false);
 
-  
   useEffect(() => {
     const myPost = async () => {
       try {
-        const res = await axios.get("/post/timeline/" + channel.userId);
+        const res = await axios.get("/post/timeline/" + username);
         // console.log(res);
         setMyStory(
           res.data.sort((p1, p2) => {
@@ -43,26 +42,26 @@ const MyStories = ({ poetUser, channel }) => {
     setShowAllComment(!showAllComment);
   };
   const [showFullContent, setShowFullContent] = useState(false);
-  const {user} = useContext(AuthContext)
-  const navigate = useNavigate()
-   const RetweetHandler = async (item) => {
-     // console.log(post)
-     const repost = {
-       userId: user._id,
-       desc: item.desc,
-       img: item.img,
-       imgmut: item.imgmut,
-       retweet: user._id,
-     };
-     try {
-       await axios.post("/post", repost);
+  const { user } = useContext(AuthContext);
+  const navigate = useNavigate();
+  const RetweetHandler = async (item) => {
+    // console.log(post)
+    const repost = {
+      userId: user._id,
+      desc: item.desc,
+      img: item.img,
+      imgmut: item.imgmut,
+      retweet: user._id,
+    };
+    try {
+      await axios.post("/post", repost);
       //  window.location.reload();
       navigate("/");
-     } catch (err) {
-       console.log(err);
-     }
-   };
-  
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   return (
     <>
       {myStory.map((item, index) => {
@@ -70,7 +69,7 @@ const MyStories = ({ poetUser, channel }) => {
         const { createdAt, desc, img, imgmut, retweet } = item;
         const limitedContent = desc.slice(0, 40);
         //retweet
-       
+
         return (
           <section className="my_story" key={index}>
             <div className="post-content">
@@ -107,9 +106,9 @@ const MyStories = ({ poetUser, channel }) => {
                       <p className="tym">{format(createdAt)}</p>
                       <p className="post_com">
                         {/* Comment  */}
-                        {desc}
+                        {/* {desc} */}
                         {showFullContent ? desc : limitedContent}
-                        {!showFullContent && desc.length > 40 && (
+                        {!showFullContent && desc.length > 100 && (
                           <button
                             onClick={() => setShowFullContent(true)}
                             style={{
@@ -147,21 +146,21 @@ const MyStories = ({ poetUser, channel }) => {
                 >
                   <div className="post_im_box">
                     <div className="post_im_box1">
-                      <img src={`//localhost:8800/${img}`} alt="image" />
+                      <img src={`//localhost:7878/${img}`} alt="image" />
                     </div>
 
                     {imgmut.length >= 1 ? (
                       <div className="p_im_holder">
                         {imgmut.length === 1 ? (
                           <div className="post_im_box2">
-                            <img src={`//localhost:8800/${img}`} alt="image" />
+                            <img src={`//localhost:7878/${img}`} alt="image" />
                           </div>
                         ) : (
                           imgmut.slice(0, 2).map((item, index) => {
                             return (
                               <div className="post_im_box3" key={index}>
                                 <img
-                                  src={`//localhost:8800/${item}`}
+                                  src={`//localhost:7878/${item}`}
                                   alt="image"
                                 />
                               </div>

@@ -20,7 +20,7 @@ const SignUp = ({
   idNumber,
   msg,
 }) => {
-  const [err, setErr] = useState("");
+  // const [err, setErr] = useState("");
 
   // const {signUp} = useUserAuth();
   // const navigate = useNavigate();
@@ -118,11 +118,11 @@ const SignUp = ({
                   required
                   placeholder="Enter referral ID"
                 />
-                {err && (
+                {/* {err && (
                   <div>
                     <p>{err}</p>
                   </div>
-                )}
+                )} */}
                 {msg && (
                   <div>
                     <p>{msg}</p>

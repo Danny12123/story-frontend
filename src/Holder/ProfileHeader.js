@@ -120,15 +120,15 @@ const ProfileHeader = ({showProfileHandler}) => {
           accept=".png,.jpeg,.jpg"
           onChange={(e) => setSetCoverPicture(e.target.files[0])}
         />
-        <div id="edit">
+        {/* <div id="edit"> */}
           {/* {setCoverPicture === null ? ( */}
-            <label  className="image-upload edit_profile">
+            {/* <label  className="image-upload ">
               edit profile
-            </label>
+            </label> */}
           {/* ) : (
             <button onClick={mainCoverPic}>Upload coverPicture</button>
           )} */}
-        </div>
+        {/* </div> */}
         <div className="wallet_profile_img">
           {file ? (
             <img src={URL.createObjectURL(file)} alt="" id="im2" />
@@ -148,13 +148,13 @@ const ProfileHeader = ({showProfileHandler}) => {
           accept="image/*"
         />
         <div className="wallet_camera">
-          {file === null ? (
+          {/* {file === null ? ( */}
             <label htmlFor="input2" className="image-upload">
               <FaCamera className="fa_Camera" />
             </label>
-          ) : (
-            <button onClick={uploadCover}>Upload coverPicture</button>
-          )}
+          {/* ) : ( */}
+            {/* <button onClick={uploadCover}>Upload coverPicture</button> */}
+          {/* )} */}
 
           {/* <FaCamera /> */}
         </div>

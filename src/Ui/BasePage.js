@@ -32,6 +32,7 @@ import { SideBarData } from "../Component/SideBarData";
 import { FaArrowLeft } from 'react-icons/fa';
 import { StoryImage } from "../Util/StoryImage";
 import RecentHolder from "../Holder/RecentHolder";
+import Logo from "../Img/log.png"
 const BasePage = () => {
   const navigate = useNavigate();
 
@@ -49,11 +50,7 @@ const BasePage = () => {
            <div className="sidebar">
              <div className="sidebar_holder">
                <div className="logo">
-                 <img
-                   src="./image/icons/logo1.png"
-                   alt="IMAGE"
-                   className="logoimg"
-                 />
+                 <img src={Logo} alt="IMAGE" className="logoimg" />
                  {/* <StoryImage  className="logoImage"/> */}
                </div>
                <div>

@@ -161,15 +161,15 @@ const UprofileHead = () => {
           accept=".png,.jpeg,.jpg"
           onChange={submitHandler}
         />
-        <div id="edit">
-          {file === null ? (
-            <label htmlFor="input" className="image-upload edit_profile">
-              edit profile
-            </label>
-          ) : (
-            <button onClick={uploadCover}>Upload coverPicture</button>
-          )}
-        </div>
+        {/* <div id="edit"> */}
+          {/* {file === null ? ( */}
+            {/* {/* <label htmlFor="input" className="image-upload edit_profile"> */}
+              
+            {/* </label> */} 
+          {/* ) : ( */}
+            {/* <button onClick={uploadCover}>Upload coverPicture</button>
+          )} */}
+        {/* </div> */}
         <div className="wallet_profile_img">
           {profilePic ? (
             <img src={profilePic} alt="" id="im2" />
