@@ -85,14 +85,15 @@ const ProfileStory = ({
       }
     }
     try {
-      await axios.post("/post", newPost)
+      await axios.post("/post", newPost);
       navigate("/");
+      // window.location.reload();
     } catch (err) {
       console.log(err)
     }
     
   }
-//  console.log(uploadStory);
+ console.log(uploadStory);
   // console.log(files.forEach(it=> console.log(it)));
 
   return (
@@ -113,7 +114,7 @@ const ProfileStory = ({
               <div className="img_video_holder">
                 <div className="up_img_vid">
                   {/* to display image or video */}
-                  {uploadStory && uploadStory.type === "video/" ? (
+                  {uploadStory && uploadStory.type === "video/mp4" ? (
                     <video width="400" controls>
                       <source
                         // src={`//localhost:8800/${uploadStory}`}
@@ -160,7 +161,7 @@ const ProfileStory = ({
             >
               <div className="hold_new_item">
                 {imageList.map((media, index) => {
-                  if (media && media.type === "video/") {
+                  if (media && media.type === "video/mp4") {
                     return (
                       <div className="uplo_new_img" key={index}>
                         <video
@@ -172,7 +173,7 @@ const ProfileStory = ({
                           Your browser does not support the video tag.
                         </video>
                       </div>
-                    );
+                    )
                   } else {
                     return (
                       <div className="uplo_new_img" key={index}>
@@ -225,7 +226,7 @@ const ProfileStory = ({
             <div className="img_input">
               <div className="img_input_box1">
                 <div className="img_in_a1">
-                  {uploadStory && uploadStory.type === "video/" ? (
+                  {uploadStory && uploadStory.type === "video/mp4" ? (
                     <video width="400" controls>
                       <source
                         src={URL.createObjectURL(uploadStory)}

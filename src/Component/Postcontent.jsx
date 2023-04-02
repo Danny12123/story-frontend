@@ -25,15 +25,15 @@ const Postcontent = ({ username, socket }) => {
       const resp = username
         ? await axios.get("/post/profile/" + username)
         : await axios.get("/post/story");
-      // const data = await resp.data.sort((p1, p2) => {
-      //   return new Date(p2.createdAt) - new Date(p1.createdAt);
-      // });
-      //    dispatch(AllstoryAction(data) );
-      setPosts(
-        resp.data.sort((p1, p2) => {
-          return new Date(p2.createdAt) - new Date(p1.createdAt);
-        })
-      );
+      const data = await resp.data.sort((p1, p2) => {
+        return new Date(p2.createdAt) - new Date(p1.createdAt);
+      });
+         dispatch(AllstoryAction(data) );
+      // setPosts(
+      //   resp.data.sort((p1, p2) => {
+      //     return new Date(p2.createdAt) - new Date(p1.createdAt);
+      //   })
+      // );
     };
     fetchPost();
   }, [username]);

@@ -56,25 +56,25 @@ const NavBar = ({socket}) => {
   };
   // const history = useHistory();
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
 
-  const handleScroll = () => {
-    // const navbar = document.querySelector(".main-chat-nav");
-    const poststory = document.querySelector(".imgpost");
-    const smallScreen = document.querySelector(".sm_nav_holder");
-    if (window.pageYOffset > 0) {
-      // navbar.classList.add("nav_show_scroll");
-      poststory.classList.add("imgpost_scroll");
-      smallScreen.classList.add("sm_nav_holder_scroll");
-    } else {
-      // navbar.classList.remove("nav_show_scroll");
-      poststory.classList.add("imgpost_scroll");
-      smallScreen.classList.add("sm_nav_holder_scroll");
-    }
-  };
+  // const handleScroll = () => {
+  //   // const navbar = document.querySelector(".main-chat-nav");
+  //   const poststory = document.querySelector(".imgpost");
+  //   const smallScreen = document.querySelector(".sm_nav_holder");
+  //   if (window.pageYOffset > 0) {
+  //     // navbar.classList.add("nav_show_scroll");
+  //     poststory.classList.add("imgpost_scroll");
+  //     smallScreen.classList.add("sm_nav_holder_scroll");
+  //   } else {
+  //     // navbar.classList.remove("nav_show_scroll");
+  //     poststory.classList.add("imgpost_scroll");
+  //     smallScreen.classList.add("sm_nav_holder_scroll");
+  //   }
+  // };
   // const handleSearch = async (e) => {
   //    e.preventDefault();
   //   const response = await axios.get(`/users/search?q=${searchQuery}`);

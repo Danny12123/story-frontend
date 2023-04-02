@@ -218,7 +218,7 @@ const newConversation = async (item) => {
             <div id="use_container">
               {conversation.map((item, index) => {
                 return (
-                  <div key={item._id} onClick={() => setCurrentChat(item)}>
+                  <div key={item._id} c>
                     <Rmessage conversation={item} currentUser={user} />
                   </div>
                 );
@@ -295,38 +295,27 @@ const newConversation = async (item) => {
           </div>
         </div>
       </div>
-      {searchResults.length >0 ? <div className={ismodal ? "search_box" : "disactive_box"}>
-        {searchResults.map((item, index) => {
-          return (
-            <div className="new_m_box" key={item._id}>
-              {/* <div className="new-img-box">
-                <img src={item.profilePicture || ProfileImage} alt="" />
-              </div> */}
-              <h6 onClick={() => {
-                newConversation(item)
-                setIsmodal(!ismodal);
-                }}>{item.username}</h6>
-            </div>
-          );
-        })}
-      </div> : null}
-      
-      {/* {searchResults.length <=1 ? <div className="new_conv_box">
-        {searchResults.map((item, index) => {
-          return (
-            <div
-              className="new_m_box"
-              key={item._id}
-              onClick={() => newConversation(item)}
-            >
-              <div className="new-img-box">
-                <img src={item.profilePicture || ProfileImage} alt="" />
-              </div>
-              <h6>{item.username}</h6>
-            </div>
-          );
-        })}
-      </div> : null } */}
+      <div>
+        {searchResults.length > 0 ? (
+          <div className={ismodal ? "search_box" : "disactive_box"}>
+            {searchResults.map((item, index)=>{
+              return (
+                <h6
+                  className="new_m_box"
+                  key={index}
+                  onClick={() => {
+                    newConversation(item);
+                    // setCurrentChat(item);
+                    setIsmodal(!ismodal);
+                  }}
+                >
+                  {item.username}
+                </h6>
+              );
+            })}
+          </div>
+        ) : null}
+      </div>
     </div>
   );
 };
