@@ -238,7 +238,7 @@ const Donate = () => {
               <div className="don_btn">
                 <a
                   className="don_btn_1"
-                  href="https://commerce.coinbase.com/checkout/9fb4ccbf-f0bb-4efb-8a98-a8ec0e0b1a95"
+                  href="https://commerce.coinbase.com/checkout/c0113199-5302-4a40-b977-8f42a75b9ef6"
                 >
                   Donate
                 </a>
